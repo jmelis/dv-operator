@@ -27,6 +27,7 @@ for manifest in service-account.yaml \
                 cluster-role.yaml \
                 role-binding.yaml \
                 cluster-role-binding.yaml \
+                configmap.yaml \
                 operator.yaml
 do
     oc create -f deploy/openshift/$manifest
